@@ -3,29 +3,32 @@ channels:
   - pytorch
   - defaults
 dependencies:
-  - python=3.8.5
-  - pip=20.3
-  - cudatoolkit=11.3
-  - pytorch=1.11.0
-  - torchvision=0.12.0
+  - python=3.9.6
+  - pip=23.3.1
+  - pytorch=2.3.0
+  - torchvision=0.18.0
+  - torchaudio=2.3.0
   - numpy=1.19.2
   - pip:
     - albumentations==0.4.3
+    # - cuda-python
+    - pytorch-cuda==12.1
     - diffusers
-    - opencv-python==4.1.2.30
+    - opencv-python==4.9.0.80
     - pudb==2019.2
     - invisible-watermark
     - imageio==2.9.0
     - imageio-ffmpeg==0.4.2
-    - pytorch-lightning==1.4.2
+    - pytorch-lightning==2.2.4
     - omegaconf==2.1.1
     - test-tube>=0.7.5
     - streamlit>=0.73.1
     - einops==0.3.0
     - torch-fidelity==0.3.0
-    - transformers==4.19.2
-    - torchmetrics==0.6.0
+    - transformers==4.37.2
+    - torchmetrics==0.7.0
     - kornia==0.6
+    - -e git+https://github.com/OpenMined/TenSEAL.git#egg=tenseal
     - -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
     - -e git+https://github.com/openai/CLIP.git@main#egg=clip
     - -e .
